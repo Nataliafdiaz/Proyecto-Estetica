@@ -1,0 +1,377 @@
+/* header */ 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Source Sans 3", sans-serif;
+
+}
+header{
+    background-color:#CBE2B5 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+nav{
+    width: 40%;
+}
+    header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 100%;
+    align-items: center;
+
+}
+
+header img{
+    width: 100px;
+    margin: 5px;
+}
+
+.listaNav a {
+    color: #c07f00;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+h1 {
+    color: #c07f00;
+    text-shadow: 2px 2px 4px #777676;
+}
+
+.tituloEncabezado{
+    color: #c07f00;
+    font-family: "Cookie";
+    font-weight: bold;
+    margin-right: auto;
+    font-size: auto;
+
+
+
+}
+/* contenido principal*/
+main{
+    background-color:#E7FBE6;
+}
+/*banner*/
+.banner{
+    
+    color: #4c3d3d;
+    background-position: center;
+    background-size: cover;
+    background-image:url(../imagenes/img-pag-principal.jpg);
+    font-size: 1.5rem;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 200px 10px;
+    text-align: center;
+}
+.banner p{
+    text-align: justify;
+}
+
+
+.servicios h3{
+    color: #4c3d3d;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.servicios p{
+
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.padreFlex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+/*pie de pagina*/
+
+footer{
+    background-color: #CBE2B5;
+    }
+    .pieDePagina{
+        font-size: 2rem;
+        font-weight: bold;
+        color:#c07f00;
+        font-family: "cookie";
+
+    }
+footer img{
+        width: 80px;
+        font-size: 1.5rems;
+
+    }
+    .iconoWp{
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        }
+
+
+        /*main de html manicura cejas y pestañas*/
+        .contenedorGrid img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            filter: drop-shadow(5px 5px 10px);
+        }
+
+        .contenedorGrid{
+            display: grid;
+            grid-template-areas:
+            "titulo titulo titulo"
+            "uñas1 textoUñas uñas3"
+            "uñas1  uñas2  textoCejas"
+            "pestañas  p  cejasImg";
+
+            /*alto y ancho de cada fila*/
+            grid-template-rows:250px 250px 300px 350px;
+            grid-template-columns:25% 25% 20%;
+            gap: 2px 2px;
+            /*mueve el grid completo*/
+            justify-content: center;
+            /*propiedades para acomodar*/
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #4c3d3d;
+            text-align: justify;
+        
+        }
+
+        .titulo{
+            grid-area: titulo;
+            font-size: 2rem;
+        }
+        .uñas1{
+            grid-area: uñas1;
+        }
+        .textoUñas{
+            grid-area: textoUñas;
+            font-size: 1,5rem;
+        }
+        .uñas3{
+            grid-area: uñas3;
+        }
+        .textoCejas{
+            grid-area: textoCejas;
+            font-size: 1,5rem;
+        }
+        .pestañas{
+            grid-area: pestañas;
+        }
+        .lifting{
+            grid-area: p;
+        }
+        .cejas{
+            grid-area: cejasImg;
+        }
+
+        /* main de html de faciales*/
+        .contenedorFacial img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            filter: drop-shadow(5px 5px 10px);
+        }
+
+        .contenedorFacial{
+            display: grid;
+            grid-template-areas: 
+            "titulo   titulo   titulo"
+            "limpieza-facial p-limpieza p-limpieza"
+            "p-dermap  p-dermap  img-dermapen"
+            "img-peeling p-pel  p-pel"
+            "p-hifu  p-hifu  img-hifu"
+            "img-dep-facial  p-texto p-texto"
+            "p-desp  p-desp  img-desp";
+
+             /*alto y ancho de cada fila*/
+             grid-template-rows: 100px 250px 300px 300px 200px 200px 200px;
+             grid-template-columns: 30% 30% 25%;
+             gap: 10px 10px;
+             /* mueve grid completo*/
+             justify-content: center;
+             justify-items: center;
+             align-items: center;
+             margin-bottom: 5px;
+             font-weight: bold;
+             color: #4c3d3d;
+             text-align: justify;
+            
+        }
+        .titulo{
+            grid-area: titulo;
+        }
+        .limpieza{
+            grid-area: p-limpieza;
+        }
+        .dermapen{
+          grid-area: p-dermap;
+        }
+        .peeling{
+           grid-area: p-pel;
+        }
+        .hifu{
+          grid-area: p-hifu;
+        }
+        .depilacion{
+            grid-area: p-texto;
+        }
+        .tratamientoDesp{
+            grid-area: p-desp;
+        }
+        .facial{
+            grid-area: limpieza-facial;
+        }
+        .derma{
+            grid-area: img-dermapen;
+        }
+        .planing{
+            grid-area: img-peeling;
+        }
+        .hifuFacial{
+            grid-area: img-hifu;
+        }
+        .depi-facial{
+            grid-area: img-dep-facial;
+        }
+        .despig{
+            grid-area: img-desp;
+        }
+
+         /*Main de corporal*/
+
+         .contenedorCorporal img{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            filter: drop-shadow(5px 5px 10px);
+         }
+
+         .contenedorCorporal{
+            display: grid;
+            grid-template-areas: 
+            "titulo  titulo titulo titulo"
+            "img1  img1  img2  img2"
+            "d-crio  d-crio d-radio d-radio"
+            "img3  img3  img4  img4"
+            "d-preso d-preso d-h  d-h"
+            "img5  img5  img6  img6"
+            "d-body  d-body d-depicor d-depicor";
+
+            /* alto y ancho de fila*/
+            grid-template-rows: 150px 300px 150px 300px 150px 300px 150px;
+            grid-template-columns: 10% 20% 10% 15%;
+            gap: 75px 75px;
+
+              /* mueve grid completo*/
+              justify-content: center;
+              justify-items: center;
+              align-items: center;
+              margin-bottom: 5px;
+              font-weight: bold;
+              color: #4c3d3d;
+              text-align: justify;}
+              
+              .titulo{
+                grid-area:titulo;
+              }
+              .crio{
+                grid-area: d-crio;
+              }
+              .radio{
+                grid-area: d-radio;
+              }
+              .preso{
+                grid-area: d-preso;
+              }
+              .h{
+                grid-area:d-h;
+              }
+              .body{
+                grid-area: d-body;
+              }
+              .depicor{
+                grid-area: d-depicor;
+              }
+              .i1{
+                grid-area: img1;
+              }
+              .i2{
+                grid-area: img2;
+              }
+              .i3{
+                grid-area: img3;
+              }
+              .i4{
+                grid-area: img4;}
+
+              .i5{grid-area: img5;}
+              .i6{grid-area: img6;}
+
+              /*Main de contacto*/
+
+              .contacto{
+                background-image: url(../imagenes/cuidamos-tu-cuerpo.jpg);
+                font-family: "Source Sans 3", sans-serif;
+                padding: 200px 10px;
+                text-align:left;
+            }
+
+
+            /*mobile*/
+            @media(max-width:500px){
+                header{
+                    flex-direction: column;
+                    align-items: center;
+                justify-content: space-between;}
+                    nav{
+                        width: 100%;
+                    }
+                header ul{
+                    flex-direction: column;
+                }
+                .padreFlex{
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .contenedorCorporal{
+                    grid-template-areas:
+                    "titulo"
+                    "img1"
+                    "d-crio"
+                    "img2"
+                    "d-radio"
+                    "img3"
+                    "d-preso"
+                    "img4"
+                    "d-h"
+                    "img5"
+                    "d-body"
+                    "img6"
+                    "d-depicor";
+
+                    grid-template-columns:  1fr;
+                    grid-template-rows: 100px 200px (11,200px);
+                }
+     
+            }
